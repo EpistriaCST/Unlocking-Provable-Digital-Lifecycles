@@ -1,0 +1,95 @@
+# Public Release Announcement
+
+### CSTP / EIV / Relational Merkle Repository Now Open
+
+Today I am releasing a complete cryptographic framework—five documents, a unified model—that solves a simple but unresolved problem:
+
+**How do you prove that something existed, and changed—or was destroyed—without continuing to hold the thing itself?**
+
+**Example:** A financial institution needs to prove an account was deleted to satisfy GDPR, while simultaneously proving it once existed to satisfy SEC record-retention rules. This system makes both possible, cryptographically.
+
+This repository publishes the answer in full. No paywalls. No gated licensing. No "contact us for enterprise access." It is free for anyone to use, critique, extend, ignore, or improve.
+
+## What's Being Released
+
+A full-stack system for provable state transitions and verifiable absence:
+
+| Document | Purpose |
+|----------|---------|
+| **1. Audit-Verifiable EIVs** | Ephemeral Initialization Vectors—prove something existed after it's gone. |
+| **2. Transition-State Model** | Turns lifecycle events (create, migrate, destroy) into cryptographic objects. |
+| **3. CSTP Core** | Cryptographic State Transition Proofs—irreversible, verifiable state evolution. |
+| **4. Graph Lifecycle** | Applies CSTP to interdependent assets—branching, merging, cascading deletion. |
+| **5. Relational Merkle Closures** | Cryptographic proof that no valid dependency path exists (A ⇏ B). |
+
+These documents are not marketing brochures. They are the working blueprints—mechanisms, proofs, data structures, lifecycle logic, receipts, Merkle chaining, failure modes, and maths.
+
+## Why This Exists
+
+Every regulatory environment, cloud system, forensic investigation, database, supply chain, and audit process quietly suffers from the same contradiction:
+
+> *"Erase this data."*  
+> *"Prove you had it."*  
+> *"But also prove you don't have it anymore"*
+
+Existing systems either lie, log it, or litigate it.  
+This one proves it—without appeals to trust, authority, or secrecy.
+
+## Is It Practical?
+
+Yes.
+
+- **Verification takes microseconds.**
+- **Storage scales logarithmically**, not linearly with history or dataset size.
+- No blockchain bloat. No trusted third party. No proprietary SDK required.
+
+## What This Is Not
+
+This repository does **not** solve governance.  
+It does not enforce ethics, law, or "responsible use."  
+It does not prevent people from doing the wrong thing with the right tools.
+
+It is deliberately limited to the part cryptography can actually do:
+
+✔ Make destruction provable.  
+✔ Make tampering obvious.  
+✔ Make absence verifiable.  
+✔ Make trust optional.
+
+Governance, politics, and morality are left to others.
+
+## How It's Licensed
+
+- MIT License. Fork it, break it, build on it. Attribution required, nothing more.
+
+## Who This Is For
+
+This release is for:
+
+- Engineers who want verifiable deletion instead of log entries.
+- Cryptographers who recognize that integrity includes *absence*.
+- Auditors and regulators tired of "proprietary compliance dashboards".
+- People who don't need permission to build.
+
+## What Happens Next
+
+Maybe nothing. Or maybe a new standard.
+
+I won't run a foundation.  
+I won't build a certification board.  
+I won't form a steering committee.  
+This is now public infrastructure. If someone wants to take it further, they will. If I can get a fence post out of it, that's something very much appreciated.
+
+## Repository Access
+
+The full repository—including documents, raw specifications, LaTeX diagrams, maths, and reference implementations—will be available at:
+
+**➡︎ https://github.com/EpistriaCST/Cryptographic-State-Transitions**
+
+Be well, stay safe,
+
+C.S. Thomas  
+Epistria, LLC
+
+P.S.  If you found any of this useful, a small contribution to my fencing needs is appreciated.
+https://ko-fi.com/epistria  We raise Meishan pigs, Cotton Patch Geese, Beltsville Small White Turkeys, and a host of others all running loose.
